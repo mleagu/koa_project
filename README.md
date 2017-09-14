@@ -1,6 +1,14 @@
-# Sample project using Koa and Passport
-npm install nodemon -g
+# Sample project using Koa and Passport.
 
-npm install
+Setup & Run
+    should be installed node(used version 6.11.0) and npm
 
-npm run start
+    npm install nodemon -g
+
+    # Install dependencies
+    npm install
+
+    # To start the project on localhost:8000
+    npm run start
+
+Small app which is show how to use koa together with passport.

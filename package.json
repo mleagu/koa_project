@@ -1,7 +1,7 @@
 {
   "name": "koa_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sample project using Koa and Passport.",
   "main": "app.js",
   "engines": {
     "node": ">=7"
