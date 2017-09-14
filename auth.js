@@ -10,6 +10,7 @@ const fetchUser = (() => {
   })
 })()
 
+// try to authenticate user with email and password
 passport.use(new LocalStrategy({usernameField: 'email',
   passwordField: 'password'}, (email, password, done) => {
     fetchUser()

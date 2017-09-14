@@ -1,7 +1,8 @@
 # Sample project using Koa and Passport.
 
-Setup & Run
-    should be installed node(used version 6.11.0) and npm
+Setup & Run:
+
+    Should be installed node(used version 6.11.0) and npm
 
     npm install nodemon -g
 
