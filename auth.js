@@ -1,7 +1,6 @@
 const passport = require('koa-passport')
 const LocalStrategy = require('passport-local').Strategy
 const async = require('asyncawait/async')
-const wait = require('asyncawait/await')
 const allCredentials = [{email: 'test@test.com', password: 1234}]
 
 const fetchUser = (() => {
@@ -10,19 +9,6 @@ const fetchUser = (() => {
     return user
   })
 })()
-
-passport.serializeUser((user, done) => {
-  done(null, user.id)
-})
-
-passport.deserializeUser(async((id, done) => {
-  try {
-    const user = wait(fetchUser())
-    done(null, user)
-  } catch (err) {
-    done(err)
-  }
-}))
 
 passport.use(new LocalStrategy({usernameField: 'email',
   passwordField: 'password'}, (email, password, done) => {

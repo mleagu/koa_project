@@ -7,11 +7,6 @@ const router = require('koa-route')
 const app = new Koa()
 app.proxy = true
 
-// sessions
-const session = require('koa-session')
-app.keys = ['your-session-secret']
-app.use(session({}, app))
-
 // body parser
 const bodyParser = require('koa-bodyparser')
 app.use(bodyParser())
